@@ -58,4 +58,4 @@ Development is ongoing and this is a snapshot of build 2.0.34
 
 ## License
 
-
+This project is licensed under the GNU General Public License v3.0. See [LICENSE](LICENSE) for details.
