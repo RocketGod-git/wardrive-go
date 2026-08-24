@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/widget_bg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:baselineAligned="false">
+            <TextView
+                android:id="@+id/c_tab0"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="FOUND"
+                android:textColor="#37ECCB"
+                android:textStyle="bold"
+                android:textSize="11sp"
+                android:maxLines="1"
+                android:paddingTop="2dp"
+                android:paddingBottom="4dp" />
+            <TextView
+                android:id="@+id/c_tab1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="THREATS"
+                android:textColor="#6E827D"
+                android:textStyle="bold"
+                android:textSize="11sp"
+                android:maxLines="1"
+                android:paddingTop="2dp"
+                android:paddingBottom="4dp" />
+            <TextView
+                android:id="@+id/c_tab2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="LIVE"
+                android:textColor="#6E827D"
+                android:textStyle="bold"
+                android:textSize="11sp"
+                android:maxLines="1"
+                android:paddingTop="2dp"
+                android:paddingBottom="4dp" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#1AFFFFFF"
+            android:contentDescription="@null" />
+
+        <LinearLayout
+            android:id="@+id/c_body"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/c_big"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textColor="#37ECCB"
+                android:textStyle="bold"
+                android:textSize="34sp"
+                android:maxLines="1"
+                android:includeFontPadding="false" />
+
+            <TextView
+                android:id="@+id/c_sub"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="APs in range"
+                android:textColor="#94A9A4"
+                android:textSize="11sp"
+                android:maxLines="1" />
+
+            <TextView
+                android:id="@+id/c_line"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:text="0 new"
+                android:textColor="#E9F3F0"
+                android:textSize="11sp"
+                android:maxLines="1"
+                android:ellipsize="end" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/c_beast"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="BEAST"
+        android:textColor="#08130F"
+        android:textStyle="bold"
+        android:textSize="10sp"
+        android:maxLines="1"
+        android:background="@drawable/widget_beast_chip"
+        android:drawableStart="@drawable/ic_beast_bolt"
+        android:drawableTint="#08130F"
+        android:drawablePadding="2dp"
+        android:paddingStart="6dp"
+        android:paddingEnd="7dp"
+        android:paddingTop="2dp"
+        android:paddingBottom="2dp"
+        android:visibility="gone" />
+</FrameLayout>

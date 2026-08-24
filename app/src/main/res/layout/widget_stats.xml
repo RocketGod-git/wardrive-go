@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/w_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/widget_bg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:baselineAligned="false">
+            <LinearLayout android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:orientation="vertical" android:gravity="center">
+                <TextView android:id="@+id/w_wifi" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" android:textColor="#37ECCB" android:textStyle="bold" android:textSize="22sp" android:maxLines="1" android:includeFontPadding="false" />
+                <TextView android:id="@+id/w_wifi_l" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Wi‑Fi" android:textColor="#94A9A4" android:textSize="12sp" android:maxLines="1" />
+            </LinearLayout>
+            <LinearLayout android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:orientation="vertical" android:gravity="center">
+                <TextView android:id="@+id/w_bt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" android:textColor="#E9F3F0" android:textStyle="bold" android:textSize="22sp" android:maxLines="1" android:includeFontPadding="false" />
+                <TextView android:id="@+id/w_bt_l" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="BT" android:textColor="#94A9A4" android:textSize="12sp" android:maxLines="1" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:baselineAligned="false">
+            <LinearLayout android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:orientation="vertical" android:gravity="center">
+                <TextView android:id="@+id/w_cell" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" android:textColor="#E9F3F0" android:textStyle="bold" android:textSize="22sp" android:maxLines="1" android:includeFontPadding="false" />
+                <TextView android:id="@+id/w_cell_l" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="cell" android:textColor="#94A9A4" android:textSize="12sp" android:maxLines="1" />
+            </LinearLayout>
+            <LinearLayout android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:orientation="vertical" android:gravity="center">
+                <TextView android:id="@+id/w_range" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" android:textColor="#E9F3F0" android:textStyle="bold" android:textSize="22sp" android:maxLines="1" android:includeFontPadding="false" />
+                <TextView android:id="@+id/w_range_l" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="in range" android:textColor="#94A9A4" android:textSize="12sp" android:maxLines="1" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/w_beast"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|end"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:text=""
+        android:maxLines="1"
+        android:background="@drawable/widget_beast_chip"
+        android:drawableStart="@drawable/ic_beast_bolt"
+        android:drawableTint="#08130F"
+        android:paddingStart="5dp"
+        android:paddingEnd="5dp"
+        android:paddingTop="3dp"
+        android:paddingBottom="3dp"
+        android:visibility="gone" />
+</FrameLayout>

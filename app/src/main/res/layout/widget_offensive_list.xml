@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ol_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/widget_bg"
+    android:padding="12dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+        <ImageView
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:src="@drawable/ic_stat_wardrive"
+            android:contentDescription="@null" />
+        <TextView
+            android:id="@+id/ol_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:text="OFFENSIVE DEVICES"
+            android:textColor="#FF5B52"
+            android:textStyle="bold"
+            android:textSize="13sp"
+            android:maxLines="1" />
+        <TextView
+            android:id="@+id/ol_count"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text=" · 0"
+            android:textColor="#94A9A4"
+            android:textSize="13sp"
+            android:maxLines="1" />
+        <TextView
+            android:id="@+id/ol_beast"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BEAST"
+            android:textColor="#08130F"
+            android:textStyle="bold"
+            android:textSize="11sp"
+            android:maxLines="1"
+            android:background="@drawable/widget_beast_chip"
+            android:drawableStart="@drawable/ic_beast_bolt"
+            android:drawableTint="#08130F"
+            android:drawablePadding="2dp"
+            android:paddingStart="6dp"
+            android:paddingEnd="7dp"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/ol_empty"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="No hostile devices nearby"
+        android:textColor="#6E827D"
+        android:textSize="12sp" />
+
+    <ListView
+        android:id="@+id/ol_list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="8dp"
+        android:divider="#1AFFFFFF"
+        android:dividerHeight="1dp" />
+</LinearLayout>

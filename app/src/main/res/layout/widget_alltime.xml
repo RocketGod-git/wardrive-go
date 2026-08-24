@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/at_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:background="@drawable/widget_bg"
+    android:baselineAligned="false"
+    android:padding="8dp">
+
+    <LinearLayout android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:orientation="vertical" android:gravity="center">
+        <TextView android:id="@+id/at_wifi" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" android:textColor="#37ECCB" android:textStyle="bold" android:textSize="22sp" android:maxLines="1" android:includeFontPadding="false" />
+        <TextView android:id="@+id/at_wifi_l" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Wi‑Fi" android:textColor="#94A9A4" android:textSize="12sp" android:maxLines="1" />
+    </LinearLayout>
+    <LinearLayout android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:orientation="vertical" android:gravity="center">
+        <TextView android:id="@+id/at_bt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" android:textColor="#5AB4FF" android:textStyle="bold" android:textSize="22sp" android:maxLines="1" android:includeFontPadding="false" />
+        <TextView android:id="@+id/at_bt_l" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="BT" android:textColor="#94A9A4" android:textSize="12sp" android:maxLines="1" />
+    </LinearLayout>
+    <LinearLayout android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:orientation="vertical" android:gravity="center">
+        <TextView android:id="@+id/at_cell" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" android:textColor="#E9F3F0" android:textStyle="bold" android:textSize="22sp" android:maxLines="1" android:includeFontPadding="false" />
+        <TextView android:id="@+id/at_cell_l" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="cell" android:textColor="#94A9A4" android:textSize="12sp" android:maxLines="1" />
+    </LinearLayout>
+    <LinearLayout android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:orientation="vertical" android:gravity="center">
+        <TextView android:id="@+id/at_total" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" android:textColor="#FFC24A" android:textStyle="bold" android:textSize="22sp" android:maxLines="1" android:includeFontPadding="false" />
+        <TextView android:id="@+id/at_total_l" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="all‑time" android:textColor="#94A9A4" android:textSize="12sp" android:maxLines="1" />
+    </LinearLayout>
+</LinearLayout>

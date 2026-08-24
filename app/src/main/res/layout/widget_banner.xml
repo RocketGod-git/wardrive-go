@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/b_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/widget_bg"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+        <ImageView
+            android:layout_width="14dp"
+            android:layout_height="14dp"
+            android:layout_marginEnd="4dp"
+            android:src="@drawable/ic_stat_wardrive"
+            android:contentDescription="@null" />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="War" android:textColor="#E9F3F0" android:textStyle="bold" android:textSize="13sp" android:maxLines="1" />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="drive" android:textColor="#37ECCB" android:textStyle="bold" android:textSize="13sp" android:maxLines="1" />
+        <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text=" Go" android:textColor="#E9F3F0" android:textStyle="bold" android:textSize="13sp" android:maxLines="1" />
+        <TextView
+            android:id="@+id/b_beast"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BEAST"
+            android:textColor="#08130F"
+            android:textStyle="bold"
+            android:textSize="10sp"
+            android:maxLines="1"
+            android:background="@drawable/widget_beast_chip"
+            android:drawableStart="@drawable/ic_beast_bolt"
+            android:drawableTint="#08130F"
+            android:drawablePadding="2dp"
+            android:paddingStart="6dp"
+            android:paddingEnd="7dp"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:baselineAligned="false"
+        android:layout_marginTop="6dp">
+
+        <LinearLayout android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:orientation="vertical" android:gravity="center">
+            <TextView android:id="@+id/b_wifi" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" android:textColor="#37ECCB" android:textStyle="bold" android:textSize="20sp" android:maxLines="1" android:includeFontPadding="false" />
+            <TextView android:id="@+id/b_wifi_l" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Wi‑Fi" android:textColor="#94A9A4" android:textSize="12sp" android:maxLines="1" />
+        </LinearLayout>
+        <LinearLayout android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:orientation="vertical" android:gravity="center">
+            <TextView android:id="@+id/b_bt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" android:textColor="#E9F3F0" android:textStyle="bold" android:textSize="20sp" android:maxLines="1" android:includeFontPadding="false" />
+            <TextView android:id="@+id/b_bt_l" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="BT" android:textColor="#94A9A4" android:textSize="12sp" android:maxLines="1" />
+        </LinearLayout>
+        <LinearLayout android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:orientation="vertical" android:gravity="center">
+            <TextView android:id="@+id/b_cell" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" android:textColor="#E9F3F0" android:textStyle="bold" android:textSize="20sp" android:maxLines="1" android:includeFontPadding="false" />
+            <TextView android:id="@+id/b_cell_l" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="cell" android:textColor="#94A9A4" android:textSize="12sp" android:maxLines="1" />
+        </LinearLayout>
+        <LinearLayout android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:orientation="vertical" android:gravity="center">
+            <TextView android:id="@+id/b_ap" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" android:textColor="#E9F3F0" android:textStyle="bold" android:textSize="20sp" android:maxLines="1" android:includeFontPadding="false" />
+            <TextView android:id="@+id/b_ap_l" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="in range" android:textColor="#94A9A4" android:textSize="12sp" android:maxLines="1" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:baselineAligned="false"
+        android:layout_marginTop="4dp">
+
+        <LinearLayout android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:orientation="vertical" android:gravity="center">
+            <TextView android:id="@+id/b_rate" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" android:textColor="#E9F3F0" android:textStyle="bold" android:textSize="20sp" android:maxLines="1" android:includeFontPadding="false" />
+            <TextView android:id="@+id/b_rate_l" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="new/min" android:textColor="#94A9A4" android:textSize="12sp" android:maxLines="1" />
+        </LinearLayout>
+        <LinearLayout android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:orientation="vertical" android:gravity="center">
+            <TextView android:id="@+id/b_speed" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="—" android:textColor="#E9F3F0" android:textStyle="bold" android:textSize="20sp" android:maxLines="1" android:includeFontPadding="false" />
+            <TextView android:id="@+id/b_speed_u" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="mph" android:textColor="#94A9A4" android:textSize="12sp" android:maxLines="1" />
+        </LinearLayout>
+        <LinearLayout android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:orientation="vertical" android:gravity="center">
+            <TextView android:id="@+id/b_dist" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" android:textColor="#E9F3F0" android:textStyle="bold" android:textSize="20sp" android:maxLines="1" android:includeFontPadding="false" />
+            <TextView android:id="@+id/b_dist_u" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="m" android:textColor="#94A9A4" android:textSize="12sp" android:maxLines="1" />
+        </LinearLayout>
+        <LinearLayout android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:orientation="vertical" android:gravity="center">
+            <TextView android:id="@+id/b_threat" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" android:textColor="#FF5B52" android:textStyle="bold" android:textSize="20sp" android:maxLines="1" android:includeFontPadding="false" />
+            <TextView android:id="@+id/b_threat_l" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="threats" android:textColor="#94A9A4" android:textSize="12sp" android:maxLines="1" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginTop="8dp">
+        <ImageView
+            android:id="@+id/b_accent"
+            android:layout_width="4dp"
+            android:layout_height="28dp"
+            android:layout_marginEnd="9dp"
+            android:background="#37ECCB"
+            android:contentDescription="@null" />
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/b_eyebrow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="LIVE"
+                android:textColor="#37ECCB"
+                android:textStyle="bold"
+                android:textSize="9sp"
+                android:maxLines="1"
+                android:ellipsize="end" />
+            <TextView
+                android:id="@+id/b_line"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Radar live"
+                android:textColor="#E9F3F0"
+                android:textSize="13sp"
+                android:maxLines="1"
+                android:ellipsize="end" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

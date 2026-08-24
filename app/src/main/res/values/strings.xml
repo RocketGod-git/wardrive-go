@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="widget_desc">Live wardrive stats — APs in range, session totals, and BEAST mode.</string>
+    <string name="offensive_widget_desc">Live count of hostile devices nearby — attack tools, surveillance cams, and trackers.</string>
+    <string name="offensive_list_widget_desc">Scrollable list of hostile devices nearby — each attack tool, surveillance cam, and tracker.</string>
+    <string name="console_widget_desc">Tool Console — tap tabs to switch between Wardrive, Threats, and Status summaries.</string>
+    <string name="banner_widget_desc">Wide dashboard — live stats row plus the latest detection banner.</string>
+    <string name="alltime_widget_desc">All-time totals — lifetime Wi-Fi, Bluetooth, cell, and grand total ever logged.</string>
+</resources>
